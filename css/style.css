@@ -42,7 +42,15 @@ body {
   color: #000;
   margin-top: 65px;
 }
+.header-logo:hover {
+  opacity: 0.6;
+}
+.header-logo:active {
+  opacity: 0.3;
+}
 .search {
+  display: flex;
+  flex-direction: row;
   margin-left: 60px;
 }
 .search__input {
@@ -51,7 +59,59 @@ body {
   position: relative;
   left: 36px;
   background-color: #f7e296;
+  width: 262px;
+  height: 29px;
   border: none;
+}
+.search__input:hover {
+  opacity: 0.6;
+}
+.search__input:active {
+  opacity: 0.3;
+  outline: none;
+  border: none;
+}
+.search__input:focus {
+  outline: none;
+  border: none;
+}
+
+
+.search__btn {
+  position: absolute;
+  right: 750px;
+  top: 35px;
+  display: none;
+}
+
+.search__input:active + .search__btn {
+  display: block;
+}
+.search__input:focus + .search__btn {
+  display: block;
+}
+
+.search__btn--link:hover {
+  background-color: #000;
+  color: #fff;
+}
+.search__btn--link:hover::after {
+  opacity: 0;
+}
+.search__btn--link {
+  color: #000;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  position: relative;
+}
+.search__btn--link::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  background-color: #000;
+  top: 42px;
+  right: 90px;
 }
 .search__img {
   bottom: 50px;
@@ -69,6 +129,16 @@ body {
   display: flex;
   list-style: none;
   margin-bottom: 50px;
+}
+.cart:hover,
+.compare:hover,
+.user:hover {
+  opacity: 0.6;
+}
+.cart:active,
+.compare:active,
+.user:active {
+  opacity: 0.3;
 }
 .cart {
   margin-right: 35px;
@@ -119,6 +189,12 @@ body {
   margin-bottom: 166px;
   
 }
+.menu-catalog__link:hover {
+  opacity: 0.6;
+}
+.menu-catalog__link:active {
+  opacity: 0.3;
+}
 .menu-catalog__link {
   padding-bottom: 30px;
   background-color: #f7e296;
@@ -164,6 +240,16 @@ body {
 .deliveri {
   margin-right: 48px;
 }
+.сontacts:hover,
+.guarantee:hover,
+.deliveri:hover {
+  opacity: 0.6;
+}
+.сontacts:active,
+.guarantee:active,
+.deliveri:active {
+  opacity: 0.3;
+}
 .deliveri__link,
 .guarantee__link,
 .сontacts__link {
@@ -208,7 +294,9 @@ body {
 .menu-catalog__link:hover + .menu-catalog__inner {
   display: flex;
 }
-
+.menu-catalog__inner:hover {
+  display: flex;
+}
 /*--/menu--*/
 /*--Footet--*/
 .footer {
