@@ -513,7 +513,6 @@ body {
 .slide__input:checked + .slide__label + .slider {
   display: flex;
 }
-
 /*--/slider__circle--*/
 
 .slide-specification {
