@@ -469,7 +469,7 @@ body {
   width: 14px;
   height: 14px;
   margin-left: 980px;
-  bottom: 1920px;
+  bottom: 1860px;
   z-index: 3;
 }
 .first-slide {
@@ -584,7 +584,6 @@ body {
 /*--advantages--*/
 .advantages {
   display: flex;
-  /* justify-content: space-between; */
   background: linear-gradient(180deg,#fff 0%, #fff 15%, #e5e5e5 15%, #e5e5e5 80%);
   height: 350px;
   width: 100%;
@@ -605,17 +604,17 @@ body {
 .advantages-slider__text {
   position: absolute;
   margin-left: 400px;
-  margin-top: -70px;
+  margin-top: -52px;
 }
 .advantages-slider__text2 {
   position: absolute;
   margin-left: 400px;
-  margin-top: -165px;
+  margin-top: -132px;
 }
 .advantages-slider__text3 {
   position: absolute;
   margin-left: 400px;
-  margin-top: -260px;
+  margin-top: -212px;
 }
 .advantages-slider__text--title {
   font-family: "GilroyextraBold", sans-serif;
@@ -658,7 +657,7 @@ body {
   display: none;
 }
 .advantages__label {
-  margin-top: 40px;
+  margin-top: 25px;
   font-family: "GilroyextraBold", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -668,8 +667,8 @@ body {
   color: #000000;
   background: linear-gradient(
     to top,
-    transparent 40%,
-    #f0c52e 40%,
+    transparent 45%,
+    #f0c52e 45%,
     #f0c52e 55%,
     transparent 0%
   );
@@ -763,12 +762,30 @@ body {
   color: #000000;
   margin-bottom: 60px;
 }
-.information-about__decore,
-.information-contacts__decore {
+.information-about__decore {
+   position: relative;
+}
+.information-about__decore::before {
+  bottom: -10px;
+  position: absolute;
+  content: "";
   width: 80px;
   height: 7px;
   background-color: #000000;
   margin-bottom: 50px;
+}
+.information-contacts__decore {
+  position: relative;
+}
+.information-contacts__decore {
+  
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+  margin-bottom: 50px;
+  bottom: 525px;
 }
 .information-about__text,
 .information-contacts__text {
@@ -839,7 +856,8 @@ body {
   padding: 15px 50px 15px;
   transition: 0.2s;
 }
-.information-contacts__map--preview {
+.information-contacts__map {
+  display: block;
   margin-top: 40px;
   margin-bottom: 78px;
   width: 560px;
