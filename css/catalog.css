@@ -348,7 +348,6 @@ body {
 }
 /*--/main-top--*/
 /*--filter--*/
-
 .main__sidebar {
   display: flex;
   flex-direction: column;
@@ -549,7 +548,6 @@ body {
   margin-left: 40px;
   position: relative;
 }
-
 .filter__bluetooth--label::before {
   content: "";
   position: absolute;
