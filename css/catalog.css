@@ -348,6 +348,7 @@ body {
 }
 /*--/main-top--*/
 /*--filter--*/
+
 .main__sidebar {
   display: flex;
   flex-direction: column;
@@ -471,7 +472,7 @@ body {
   height: 2px;
   background-color: #000;
   top: 556px;
-  left: 379px;
+  left: 220px;
 }
 .filter__color--title {
   position: relative;
@@ -548,6 +549,7 @@ body {
   margin-left: 40px;
   position: relative;
 }
+
 .filter__bluetooth--label::before {
   content: "";
   position: absolute;
@@ -603,6 +605,7 @@ body {
 .filter {
   padding-left: 130px;
 }
+
 /*--/filter--*/
 /* --main__product--*/
 .main__product {
@@ -676,19 +679,26 @@ body {
   flex-wrap: wrap;
   width: 960px;
   
+
 }
 .product-item {
   margin-right: 50px;
+  position: relative;
 }
 .product-item__img {
   width: 360px;
   height: 380px;
+  cursor: pointer;
+}
+.product-item__img:hover {
+  opacity: .5;
 }
 .product-item__description {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
   margin-top: 38px;
+  cursor: pointer;
 }
 .selfi-title {
   font-family: "GilroyextraBold", sans-serif;
@@ -767,6 +777,67 @@ body {
 }
 
 /* --/product-- */
+/*--product-item__opacity--*/
+.product-item__opacity {
+  position: absolute;
+  top: 535px;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column; */
+  width: 360px;
+  height: 460px;
+  /* justify-content: center; */
+  align-items: center;
+  border: 1px solid red;
+  display: none;
+  z-index: 3;
+}
+.product-item:hover + .product-item__opacity {
+  display: block;
+}
+.product-item:focus + .product-item__opacity {
+  display: block;
+}
+.basket-btn {
+  font-family: "GilroyextraBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  color: #000;
+  background: linear-gradient(
+    to top,
+    transparent 42%,
+    #f0c52e 42%,
+    #f0c52e 55%,
+    transparent 0%
+  );
+  padding: 15px 45px 15px 45px;
+  width: 220px;
+  position: relative;
+  top: 30%;
+}
+.basket-btn:hover {
+  background: linear-gradient(
+    to top,
+    transparent 10%,
+    #f0c52e 10%,
+    #f0c52e 100%,
+    transparent 0%
+  );
+}
+.compare-title {
+  margin-top: 160px;
+}
+.compare-title__link {
+  opacity: 0.5;
+  color: #000;
+  font-family: "OpensansRegular", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+/*--product-item__opacity--*/
 /*--/main--*/
 /*--Footet--*/
 .footer {
