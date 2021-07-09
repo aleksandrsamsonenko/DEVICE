@@ -682,23 +682,24 @@ body {
 .product-item {
   margin-right: 50px;
   position: relative;
+  cursor: pointer;
 }
 .product-item__img {
   width: 360px;
   height: 380px;
-  cursor: pointer;
+  
 }
-.product-item__img:hover {
+.product-item:hover .product-item__img {
   opacity: .5;
+  cursor: pointer;
 }
 .product-item__description {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
   margin-top: 38px;
-  cursor: pointer;
+  
 }
-
 .selfi-title {
   font-family: "GilroyextraBold", sans-serif;
   font-size: 18px;
@@ -789,6 +790,7 @@ body {
 }
 .product-item:hover + .product-item__opacity {
   display: inline-block;
+  z-index: 3;
 }
 .product-item__opacity:hover + .product-item__opacity {
   display: inline-block;
