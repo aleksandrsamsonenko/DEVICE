@@ -686,15 +686,14 @@ body {
 .product-item__img {
   width: 360px;
   height: 380px;
-  cursor: pointer;
+  
 }
-
 .product-item__description {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
   margin-top: 38px;
-  cursor: pointer;
+  
 }
 
 .selfi-title {
